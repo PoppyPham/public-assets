@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Email Signature</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif, Arial, sans-serif;
+        font-size: 12px;
+        color: #000000;
+    }
+    .signature-table {
+        /* OLD: min-width: 568px; */
+        /* NEW: Use max-width for responsiveness */
+        max-width: 568px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .vertical-line {
+        border-left: 4px solid #008080;
+        padding-left: 24px;
+    }
+    .name {
+        align-self: stretch;
+        color: #008081;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .title {
+        align-self: stretch;
+        color: var(--primary-202124, #202124);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .contact-info {
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-top: 12px;
+    }
+    .logo-section {
+        width: auto; /* Allow table to be flexible */
+        padding-top: 14px;
+    }
+    .logo-container-cell {
+        vertical-align: bottom;
+    }
+    .social-website-cell {
+        vertical-align: middle; 
+        padding-left: 20px;
+    }
+    .website-link {
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+    }
+    .social-icons a {
+        text-decoration: none;
+        padding-right: 4px;
+    }
+    .disclaimer {
+        align-self: stretch;
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 10px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 14px;
+        padding-top: 14px; 
+        border-top: 1px solid #EDEFF1; 
+        color: #888888; 
+        text-align: justify;
+    }
+    
+    /* --- Styles for Mobile Responsiveness --- */
+    @media screen and (max-width: 480px) {
+        .vertical-line {
+            padding-left: 15px !important; /* Reduce left padding */
+        }
+        .logo-section .logo-container-cell,
+        .logo-section .social-website-cell {
+            /* Stack the logo and social icons vertically */
+            display: block !important;
+            width: 100% !important;
+            padding-left: 0 !important; /* Reset horizontal padding */
+            text-align: left !important;
+        }
+        .logo-container-cell {
+            /* Add space below the logo when stacked */
+            padding-bottom: 10px !important;
+            vertical-align: middle !important;
+        }
+        .disclaimer {
+            font-size: 9px !important; /* Make disclaimer text smaller */
+        }
+    }
+    
+</style>
+</head>
+<body>
+    <table class="signature-table" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="0">&nbsp;</td> 
+            <td class="vertical-line">
+                <p style="margin: 0; padding: 0;">
+                    <strong class="name">Ella Pham</strong><br>
+                    <span class="title">Chief Marketing Officer</span>
+                </p>
+                <div class="contact-info">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.33334 10L3.66668 11.6667L2.66668 10.6667" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.3333 6.00003L8.53123 7.22217C8.19133 7.37042 7.80505 7.37042 7.46515 7.22217L4.66668 6.00162" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.66667 12.6667H11.3333C12.8061 12.6667 14 11.4728 14 10V5.33334C14 3.86058 12.8061 2.66667 11.3333 2.66667H4.66667C3.19391 2.66667 2.00001 3.86058 2.00001 5.33334V8.00001" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    ella.pham@xnorgroup.com<br>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.33333V12.6667C12 13.403 11.4031 14 10.6667 14H5.33334C4.59696 14 4.00001 13.403 4.00001 12.6667V3.33333C4.00001 2.59695 4.59696 2 5.33334 2H10.6667C11.4031 2 12 2.59695 12 3.33333Z" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.66668 12H9.33334" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.66667 2V3.33333C9.66667 3.51743 9.51743 3.66667 9.33334 3.66667H6.66667C6.48258 3.66667 6.33334 3.51743 6.33334 3.33333V2" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                    +61 2 5550 4321<br>
+                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.33306 14.0025V6.5514C7.33299 6.19766 7.19241 5.85843 6.94224 5.60834L4.66529 3.33139L2.38834 5.60834C2.13817 5.85843 1.99758 6.19766 1.99751 6.5514V14.0025" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.66529 8V13.3356" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.11822 5.99915H7.21168" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.66529 1.9975V3.33139" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.3339 14.0025V7.3784C9.33398 7.15971 9.44126 6.95496 9.62102 6.83042C9.80078 6.70588 10.0302 6.67738 10.2349 6.75414L13.5697 8.00466C13.8299 8.10222 14.0024 8.35097 14.0025 8.62892V14.0025" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6695 14.0025H1.33056" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.0013 10.0008H12.3351" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.0013 12.0017H12.3351" stroke="#008081" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+ 
+                    120 Lower Delta Road, #10-09 Cendex Centre, 169208, Singapore<br>
+                    134 Yen Bai, Phuoc Ninh ward, Hai Chau district - Da Nang city, Viet Nam
+                </div>
+                <table cellpadding="0" cellspacing="0" class="logo-section">
+                    <tr>
+                        <td class="logo-container-cell">
+                            <img src="https://raw.githubusercontent.com/PoppyPham/public-assets/refs/heads/main/xnor-tech-consulting-logo.jpeg" width="91" alt="XNOR Logo" style="display: block;">
+                        </td>
+                        <td class="social-website-cell">
+                             <div class ="social-icons">
+                                <a href="https://www.facebook.com/xnorgroup/" target="_blank">
+                                    <img src="https://raw.githubusercontent.com/PoppyPham/public-assets/refs/heads/main/XNOR-facebook-fanpage.jpg" width="12" height="12" alt="XNOR Facebook fanpage"></a>
+                                <a href="https://www.linkedin.com/company/xnor-group" target="_blank">
+                                    <img src="https://raw.githubusercontent.com/PoppyPham/public-assets/refs/heads/main/XNOR-linkedin-profile.jpg" width="12" height="12" alt="XNOR LinkedIn"></a>
+                            </div>
+                            <a href="https://www.xnorgroup.com" target="_blank" class="website-link">www.xnorgroup.com</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="0">&nbsp;</td>
+            <td width="0">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="0">&nbsp;</td>
+            <td>
+                 <div class="disclaimer">
+                    <strong>IMPORTANT NOTICE:</strong> The information in this email is the property of XNOR GROUP. This communication is confidential and intended solely for the addressee(s). Any unauthorized review, use, disclosure or distribution is prohibited. If you believe this message has been sent to you in error, please notify the sender by replying to this transmission and delete the message without disclosing it. E-mail including attachments is susceptible to data corruption, interception, unauthorized amendment, tampering and viruses, and we only send and receive emails on the basis that we are not liable for any such corruption, interception, amendment, tampering or viruses or any consequences thereof. Thank you.
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
